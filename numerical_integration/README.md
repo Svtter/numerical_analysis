@@ -24,6 +24,12 @@ Gauss.cpp
 - [x] 两点三点高斯公式
 - [  ] 积分余项
 
+differentiation.cpp
+---
+
+- [x] simple
+- [x] three way speedup
+
 简单编程，如果发现存在错误请肆意issue
 n的值很小因此暂时没有必要在循环中优化计算结果
 
