@@ -13,8 +13,13 @@ Cotes.cpp
 Romber.cpp
 ---
 
-- [ ] recursion_trapezoidal 
+- [ ] recurrence_trapezoidal 
 - [ ] Romber
+
+Gauss.cpp
+---
+
+- 两点三点高斯公式
 
 简单编程，如果发现存在错误请肆意issue
 n的值很小因此暂时没有必要在循环中优化计算结果
