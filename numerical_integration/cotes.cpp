@@ -158,8 +158,8 @@ int main()
     printf("%lf %lf %lf\n", a, b, h); 
 
     printf("simpsons: %lf\n", simpsons(f, a, b));
-    printf("compound_trapezoidal: %lf\n", compound_trapezoidal(f, a, b, 4));
-    printf("compound_simpsons: %lf\n", compound_simpsons(f, a, b, 2));
-    printf("cotes: %lf\n", cotes(f, a, b, 1));
+    // printf("compound_trapezoidal: %lf\n", compound_trapezoidal(f, a, b, 4));
+    // printf("compound_simpsons: %lf\n", compound_simpsons(f, a, b, 2));
+    // printf("cotes: %lf\n", cotes(f, a, b, 1));
     return 0;
 }
