@@ -18,22 +18,24 @@ using namespace std;
 
 double f(double x)
 {
-    map <double, double> ff;
-    ff[0.0] = 1.0;
-    ff[1/8.0] = 0.9973978;
-    ff[1/4.0] = 0.9896158;
-    ff[3/8.0] = 0.9767267;
-    ff[1/2.0] = 0.9588510;
-    ff[5/8.0] = 0.9361556;
-    ff[3/4.0] = 0.9088516;
-    ff[7/8.0] = 0.8771925;
-    ff[1.0] = 0.8414709;
-    return ff[x];
+    // map <double, double> ff;
+    // ff[0.0] = 1.0;
+    // ff[1/8.0] = 0.9973978;
+    // ff[1/4.0] = 0.9896158;
+    // ff[3/8.0] = 0.9767267;
+    // ff[1/2.0] = 0.9588510;
+    // ff[5/8.0] = 0.9361556;
+    // ff[3/4.0] = 0.9088516;
+    // ff[7/8.0] = 0.8771925;
+    // ff[1.0] = 0.8414709;
+    // return ff[x];
+    return 1/x;
 }
 
-void init(int &a, int &b, int &k)
+void init(double &a, double &b, int &k)
 {
-    a = 0, b = 1, k = 2;
+    // a = 0, b = 1, k = 2;
+    a = 1, b = 5, k = 3;
 }
 
 
@@ -51,7 +53,7 @@ double recurrence_trapezoidal(double a, double b, int k)
     double res = 0;
     for(int i = 0; i <= n-1; i++)
     {
-        double x = (2*i+1)*h/2;
+        double x = a + (2*i+1)*h/2;
         res += f(x);
     }
 
@@ -62,8 +64,9 @@ double recurrence_trapezoidal(double a, double b, int k)
 
 int main()
 {
-    int a, b, k;
+    double a, b; 
+    int k;
     init(a, b, k);
-    cout << recurrence_trapezoidal(a, b, k-1) << endl;
+    printf("%.6lf\n", recurrence_trapezoidal(a, b, k-1));
     return 0;
 }

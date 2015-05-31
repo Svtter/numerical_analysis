@@ -15,7 +15,8 @@ using namespace std;
 
 double f(double x)
 {
-    return 8/(4+(x+1)*(x+1));
+    // return 8/(4+(x+1)*(x+1));
+    return x*x*cos(x);
 }
 
 double two_point_gauss(double a, double b)

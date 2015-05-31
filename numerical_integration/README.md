@@ -13,7 +13,7 @@ Cotes.cpp
 Romber.cpp
 ---
 
-- [ ] recurrence_trapezoidal 
+- [x] recurrence_trapezoidal 
 - [ ] Romber
 
 Gauss.cpp
