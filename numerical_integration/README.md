@@ -1,10 +1,20 @@
 数值积分
 ===
 
+
+Cotes.cpp
+---
+
 - [x] simpsons 辛普森
 - [x] compound_trapezoid 复化梯形
 - [x] compound_simpsons 复化辛普森
 - [x] cotes 柯特斯
+
+Romber.cpp
+---
+
+- [ ] recursion_trapezoidal 
+- [ ] Romber
 
 简单编程，如果发现存在错误请肆意issue
 n的值很小因此暂时没有必要在循环中优化计算结果
