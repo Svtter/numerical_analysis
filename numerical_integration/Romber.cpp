@@ -43,10 +43,15 @@ void init(double &a, double &b, int &k)
  * a, b 分别为积分下限，积分上限
  * k 为二分次数
  */
+const int maxn = 100;
+double T[maxn];
 double recurrence_trapezoidal(double a, double b, int k)
 {
     if(k == -1)
-        return (f(a) + f(b))/2;
+    {
+        T[k+1] = (f(a) + f(b))/2;
+        return T[k+1];
+    }
     int n = pow(2, k);
     double h = (b-a)/n;
 
@@ -58,7 +63,23 @@ double recurrence_trapezoidal(double a, double b, int k)
     }
 
     res = recurrence_trapezoidal(a, b, k-1)/2 + res*h/2;
+    T[k+1] = res;
     return res;
+}
+
+double Romber(int k)
+{
+    double S[maxn];
+    double C[maxn];
+    double R[maxn];
+    for(int i = 0; i < k; i++)
+        S[i] = 4/3.0*T[i+1] - 1/3.0*T[i];
+    for(int i = 0; i < k-1; i++)
+        C[i] = 16/15.0*S[i+1]-1/15.0*S[i];
+    for(int i = 0; i < k-2; i++)
+        R[i] = 64/63.0*C[i+1] - 1/63.0*C[i];
+
+    return R[k-3];
 }
 
 
@@ -68,5 +89,6 @@ int main()
     int k;
     init(a, b, k);
     printf("%.6lf\n", recurrence_trapezoidal(a, b, k-1));
+    printf("%.6lf\n", Romber(k));
     return 0;
 }

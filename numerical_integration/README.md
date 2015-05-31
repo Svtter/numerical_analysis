@@ -9,17 +9,20 @@ Cotes.cpp
 - [x] compound_trapezoid 复化梯形
 - [x] compound_simpsons 复化辛普森
 - [x] cotes 柯特斯
+- [ ] 积分余项
 
 Romber.cpp
 ---
 
 - [x] recurrence_trapezoidal 
 - [ ] Romber
+- [  ] 积分余项
 
 Gauss.cpp
 ---
 
-- 两点三点高斯公式
+- [x] 两点三点高斯公式
+- [  ] 积分余项
 
 简单编程，如果发现存在错误请肆意issue
 n的值很小因此暂时没有必要在循环中优化计算结果
