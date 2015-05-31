@@ -16,13 +16,13 @@ Romber.cpp
 
 - [x] recurrence_trapezoidal 
 - [ ] Romber
-- [  ] 积分余项
+- [ ] 积分余项
 
 Gauss.cpp
 ---
 
 - [x] 两点三点高斯公式
-- [  ] 积分余项
+- [ ] 积分余项
 
 differentiation.cpp
 ---
